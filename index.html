@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tazkiya-Talks
-    " তোমাকে শুধু দেখানোর জন্য " by Hafizul Islam to show Shahabuddin </title>
+    " শুধু তোমাকে দেখাতো এখন"</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -37,15 +37,15 @@
             height: 60vh;
             flex-wrap: wrap;
             text-align: center;
-            gap: 20px;
+            gap: 10px;
         }
 
         .folder {
             background-color: rgba(0, 0, 0, 0.7);
-            padding: 40px;
+            padding: 30px;
             margin: 20px;
             border-radius: 10px;
-            width: 200px;
+            width: 150px; /* Smaller size for folders */
             cursor: pointer;
             transition: background-color 0.3s ease;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
@@ -57,12 +57,13 @@
 
         .folder h2 {
             margin: 10px 0;
-            font-size: 22px;
+            font-size: 20px;
             color: #ffd700;
         }
 
         .folder input {
             margin-top: 10px;
+            display: none; /* Hides the input fields from viewers */
         }
 
         footer {
@@ -77,11 +78,11 @@
 
         .thank-you-text {
             color: #ff4b5c;
-            font-size: 20px;
+            font-size: 14px;
             font-weight: bold;
-            margin-top: 50px;
+            margin-top: 120px; /* Increased space from folders */
             text-transform: uppercase;
-            letter-spacing: 2px;
+            letter-spacing: 1px;
         }
     </style>
 </head>
@@ -89,7 +90,7 @@
 
 <header>
     <h1>Tazkiya-Talks</h1>
-    <p>Developer: Jarir</p>
+    <p>Developer: Muhammad Hafizul Islam</p>
 </header>
 
 <div class="container">
@@ -112,7 +113,14 @@
 </div>
 
 <script>
-    // You can handle file uploads or other functions here
+    // JavaScript for enabling the admin to upload (can be manipulated as needed)
+    // Example: Display the inputs for admin only
+    const isAdmin = true; // Set to 'true' if you are the admin
+    if (isAdmin) {
+        document.querySelectorAll('.folder input').forEach(input => {
+            input.style.display = 'block'; // Shows the input fields for the admin
+        });
+    }
 </script>
 
 </body>
