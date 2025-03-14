@@ -3,25 +3,117 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Your Website</title>
+    <title>Tazkiya-Talks
+    " তোমাকে শুধু দেখানোর জন্য " by Hafizul Islam to show Shahabuddin </title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(to right, #ff7e5f, #feb47b);
+            color: white;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #333;
+            padding: 20px;
+            color: white;
+        }
+
+        header h1 {
+            margin: 0;
+        }
+
+        header p {
+            font-size: 16px;
+            margin: 5px 0;
+        }
+
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 60vh;
+            flex-wrap: wrap;
+            text-align: center;
+            gap: 20px;
+        }
+
+        .folder {
+            background-color: rgba(0, 0, 0, 0.7);
+            padding: 40px;
+            margin: 20px;
+            border-radius: 10px;
+            width: 200px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+        }
+
+        .folder:hover {
+            background-color: rgba(0, 0, 0, 0.9);
+        }
+
+        .folder h2 {
+            margin: 10px 0;
+            font-size: 22px;
+            color: #ffd700;
+        }
+
+        .folder input {
+            margin-top: 10px;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            padding: 20px;
+        }
+
+        footer p {
+            font-size: 16px;
+        }
+
+        .thank-you-text {
+            color: #ff4b5c;
+            font-size: 20px;
+            font-weight: bold;
+            margin-top: 50px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+    </style>
 </head>
 <body>
-    <h1>Welcome to My Website.
-    It is created by "হাফিজুল ইসলাম" to show "শাহাবুদ্দিন" that he also knows how to create a Website. This is just a symbol. The full-work is coming. </h1>
-    
-    <!-- Image section -->
-    <section>
-        <h2>Image Section</h2>
-        <img src="image.jpg" alt="Description of image" width="600">
-    </section>
 
-    <!-- Video section -->
-    <section>
-        <h2>Video Section</h2>
-        <video width="600" controls>
-            <source src="video.mp4" type="video/mp4">#ee000ae5
-        </video>
-    </section>
+<header>
+    <h1>Tazkiya-Talks</h1>
+    <p>Developer: Jarir</p>
+</header>
+
+<div class="container">
+    <div class="folder" id="videosFolder">
+        <h2>Videos</h2>
+        <input type="file" id="videoInput" multiple accept="video/*">
+    </div>
+    <div class="folder" id="imagesFolder">
+        <h2>Images</h2>
+        <input type="file" id="imageInput" multiple accept="image/*">
+    </div>
+    <div class="folder" id="audiosFolder">
+        <h2>Audios</h2>
+        <input type="file" id="audioInput" multiple accept="audio/*">
+    </div>
+</div>
+
+<div class="thank-you-text">
+    <p>Thank you for visiting Tazkiya-Talks! Explore, contribute, and share with others.</p>
+</div>
+
+<script>
+    // You can handle file uploads or other functions here
+</script>
 
 </body>
 </html>
