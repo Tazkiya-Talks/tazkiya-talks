@@ -38,13 +38,26 @@
         }
 
         .video {
-            width: 300px;
+            width: 100%;
+            max-width: 320px; /* Max size for mobile */
             background-color: rgba(0, 0, 0, 0.7);
-            padding: 20px;
+            padding: 10px;
             border-radius: 10px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+            margin: 0 auto;
         }
 
+        video {
+            width: 100%; /* Ensures the video takes the full width of the container */
+            height: auto; /* Maintains aspect ratio */
+        }
+
+        footer {
+            margin-top: 50px;
+            padding: 10px;
+            background-color: #333;
+            color: white;
+        }
     </style>
 </head>
 <body>
