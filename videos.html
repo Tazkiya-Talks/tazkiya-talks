@@ -53,6 +53,12 @@
             border-radius: 8px;  /* Optional: adds rounded corners */
         }
 
+        iframe {
+            width: 100%;  /* Make the iframe responsive */
+            height: 180px;  /* Set a smaller height for mobile-friendly display */
+            border-radius: 8px;
+        }
+
         footer {
             margin-top: 50px;
             padding: 10px;
@@ -64,6 +70,10 @@
             /* For mobile devices */
             .video {
                 width: 95%;  /* Make video container take 95% of screen width */
+            }
+
+            iframe {
+                height: 200px;  /* Adjust height for smaller screens */
             }
         }
     </style>
@@ -84,7 +94,7 @@
     </div>
     <div class="video">
         <h2>Video 2</h2>
-        <iframe width="932" height="524" src="https://www.youtube.com/embed/jaXx6HdumU4" 
+        <iframe src="https://www.youtube.com/embed/jaXx6HdumU4" 
                 title="আশিক বিনে কে বুঝিবে দয়াল নবীর শান। নতুন নাতে রাসূল ২০২৫। আশরাফ সিদ্দীকী গজল। @DAshrafSiddiqueWaz" 
                 frameborder="0" 
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
