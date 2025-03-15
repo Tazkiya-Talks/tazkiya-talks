@@ -38,8 +38,8 @@
         }
 
         .video {
-            width: 100%;
-            max-width: 320px; /* Max size for mobile */
+            width: 90%;  /* Ensure it's small on mobile */
+            max-width: 320px;  /* Restrict max width for mobile screens */
             background-color: rgba(0, 0, 0, 0.7);
             padding: 10px;
             border-radius: 10px;
@@ -48,8 +48,9 @@
         }
 
         video {
-            width: 100%; /* Ensures the video takes the full width of the container */
-            height: auto; /* Maintains aspect ratio */
+            width: 100%;  /* Ensure the video takes the full width of the container */
+            height: auto;  /* Maintains aspect ratio */
+            border-radius: 8px;  /* Optional: adds rounded corners */
         }
 
         footer {
@@ -57,6 +58,13 @@
             padding: 10px;
             background-color: #333;
             color: white;
+        }
+
+        @media (max-width: 600px) {
+            /* For mobile devices */
+            .video {
+                width: 95%;  /* Make video container take 95% of screen width */
+            }
         }
     </style>
 </head>
