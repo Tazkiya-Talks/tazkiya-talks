@@ -3,8 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tazkiya-Talks
-    " শুধু তোমাকে দেখাতো এখন"</title>
+    <title>Tazkiya-Talks</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -61,11 +60,6 @@
             color: #ffd700;
         }
 
-        .folder input {
-            margin-top: 10px;
-            display: none; /* Hides the input fields from viewers */
-        }
-
         footer {
             background-color: #333;
             color: white;
@@ -74,15 +68,6 @@
 
         footer p {
             font-size: 16px;
-        }
-
-        .thank-you-text {
-            color: #ff4b5c;
-            font-size: 14px;
-            font-weight: bold;
-            margin-top: 120px; /* Increased space from folders */
-            text-transform: uppercase;
-            letter-spacing: 1px;
         }
     </style>
 </head>
@@ -94,34 +79,20 @@
 </header>
 
 <div class="container">
-    <div class="folder" id="videosFolder">
+    <div class="folder" onclick="window.location.href='videos.html'">
         <h2>Videos</h2>
-        <input type="file" id="videoInput" multiple accept="video/*">
     </div>
-    <div class="folder" id="imagesFolder">
+    <div class="folder" onclick="window.location.href='images.html'">
         <h2>Images</h2>
-        <input type="file" id="imageInput" multiple accept="image/*">
     </div>
-    <div class="folder" id="audiosFolder">
+    <div class="folder" onclick="window.location.href='audios.html'">
         <h2>Audios</h2>
-        <input type="file" id="audioInput" multiple accept="audio/*">
     </div>
 </div>
 
-<div class="thank-you-text">
+<footer>
     <p>Thank you for visiting Tazkiya-Talks! Explore, contribute, and share with others.</p>
-</div>
-
-<script>
-    // JavaScript for enabling the admin to upload (can be manipulated as needed)
-    // Example: Display the inputs for admin only
-    const isAdmin = true; // Set to 'true' if you are the admin
-    if (isAdmin) {
-        document.querySelectorAll('.folder input').forEach(input => {
-            input.style.display = 'block'; // Shows the input fields for the admin
-        });
-    }
-</script>
+</footer>
 
 </body>
 </html>
