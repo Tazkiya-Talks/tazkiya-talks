@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Images - Tazkiya-Talks</title>
+    <title>Videos - Tazkiya-Talks</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -29,7 +29,7 @@
             margin: 5px 0;
         }
 
-        .image-container {
+        .video-container {
             display: flex;
             justify-content: center;
             flex-wrap: wrap;
@@ -37,7 +37,7 @@
             margin-top: 30px;
         }
 
-        .image {
+        .video {
             width: 300px;
             background-color: rgba(0, 0, 0, 0.7);
             padding: 20px;
@@ -50,18 +50,24 @@
 <body>
 
 <header>
-    <h1>Tazkiya-Talks - Images</h1>
+    <h1>Tazkiya-Talks - Videos</h1>
     <p>Developer: Muhammad Hafizul Islam</p>
 </header>
 
-<div class="image-container">
-    <div class="image">
-        <h2>Image 1</h2>
-        <img src="path-to-image.jpg" alt="Image 1" width="100%">
+<div class="video-container">
+    <div class="video">
+        <h2>Video 1</h2>
+        <video controls>
+            <source src="videos/video1.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
     </div>
-    <div class="image">
-        <h2>Image 2</h2>
-        <img src="path-to-another-image.jpg" alt="Image 2" width="100%">
+    <div class="video">
+        <h2>Video 2</h2>
+        <video controls>
+            <source src="videos/video2.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
     </div>
 </div>
 
